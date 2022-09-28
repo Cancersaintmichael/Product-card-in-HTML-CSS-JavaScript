@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background: white;
+  background: rgb(245, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
