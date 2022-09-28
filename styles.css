@@ -16,15 +16,36 @@ body {
 }
 
 main {
-  width: 600px;
+  width: 675px;
+  height: 550px;
   border-radius: 16px;
-  display: flex;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 section {
-  flex: 1;
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul li {
+  padding: 0.4rem 1.8rem;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: #f9f9f9;
+}
+
+.main-content {
+  display: flex;
+  height: 100%;
 }
 
 .image div {
@@ -48,9 +69,10 @@ section {
 }
 
 .image-container {
-  background: url('https://www.icon-icon.com/wp-content/uploads/2017/12/bleu-de-chanel.jpg');
+  background: url('https://www.chanel.com/images//t_one/t_fnbedito//q_auto:good,f_auto,fl_lossy,dpr_1.2/w_1240/bleu-de-chanel-parfum-spray-3-4fl-oz--packshot-alternative-v1-107180-8851960299550.jpg');
   background-position: center;
   background-size: cover;
+  border-right: 4px solid;
 }
 
 .product-name {
@@ -67,6 +89,11 @@ section {
 .product-details a {
   font-size: 15px;
   color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.product-details a:hover {
+  color: black;
 }
 
 .product-number {
@@ -93,10 +120,8 @@ section {
 
 .product-sizes {
   border-top: 1px solid #ececec;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .product-sizes h2 {
@@ -106,12 +131,94 @@ section {
   font-weight: bold;
 }
 
+.product-literal-size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-literal-size span {
+  font-size: 0.875rem;
+}
+
+.product-size-selector {
+  border: 1px solid #ddd;
+  background: white;
+  margin-top: 0.4rem;
+  position: absolute;
+  display: none;
+  width: 100%;
+}
+
+.product-size-selector-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .add-to-cart-button {
   background: black;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
-  padding: 0.6rem 0;
+  padding: 1rem 0;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border: 0;
+  margin: 1rem 0;
+}
+
+.add-to-cart-button:hover {
+  background: #767676;
+}
+
+.product-additional {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+.product-additional a {
+  font-size: 15px;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.product-additional a:hover {
+  color: black;
+}
+
+.description-content {
+  border: 1px solid red;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+@media screen and (max-width: 712px) {
+  main {
+    height: max-content;
+    margin: 1rem;
+  }
+  section {
+    width: 100%;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .image {
+    height: 250px;
+  }
+  .image-container {
+    background: url('https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+    border: 0;
+  }
+  .product-name,
+  .product-details,
+  .product-additional {
+    text-align: center;
+  }
 }
