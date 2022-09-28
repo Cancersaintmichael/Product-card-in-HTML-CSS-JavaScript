@@ -10,9 +10,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
+  margin-top: 6rem;
 }
 
 main {
@@ -203,6 +204,9 @@ ul li:hover {
 }
 
 @media screen and (max-width: 712px) {
+  body {
+    margin-top: 0;
+  }
   main {
     height: max-content;
     margin: 1rem;
