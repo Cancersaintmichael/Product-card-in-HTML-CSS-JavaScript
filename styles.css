@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background: white;
+  background: rgb(245, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,14 +188,6 @@ ul li:hover {
   color: black;
 }
 
-.description-content {
-  border: 1px solid red;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  display: none;
-}
-
 @media screen and (max-width: 712px) {
   main {
     height: max-content;
@@ -217,8 +209,7 @@ ul li:hover {
     border: 0;
   }
   .product-name,
-  .product-details,
-  .product-additional {
+  .product-details{
     text-align: center;
   }
 }
