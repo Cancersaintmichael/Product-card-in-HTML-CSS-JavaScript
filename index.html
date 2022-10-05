@@ -9,7 +9,6 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
     <main>
@@ -49,7 +48,7 @@
           <div class="product-sizes">
             <h2>3 sizes available</h2>
             <div class="product-literal-size">
-              <span class="product-size-tag"> 3.4 FL. OZ. </span>
+              <span class="product-size-tag">3.4 FL. OZ.</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -66,8 +65,8 @@
             </div>
             <div class="product-size-selector">
               <div class="product-size-selector-container">
-                <ul>
-                  <li>3.4 FL. OZ.</li>
+                <ul class="product-sizes">
+                  <li class="is-active-size">3.4 FL. OZ.</li>
                   <li>1.7 FL. OZ.</li>
                   <li>5 FL. OZ.</li>
                 </ul>
@@ -82,5 +81,6 @@
       </section>
       </div>
     </main>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
