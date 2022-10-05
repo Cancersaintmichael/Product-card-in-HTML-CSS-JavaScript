@@ -203,6 +203,10 @@ ul li:hover {
   color: black;
 }
 
+.product-size-selector-container .product-sizes {
+  border: 0;
+}
+
 @media screen and (max-width: 712px) {
   body {
     margin-top: 0;
